@@ -1,0 +1,31 @@
+<div id="projects">
+  <h1>Projects</h1>
+</div>
+
+
+<div class="project-display">
+  <div class="project-description">
+    <h1>
+        {{ slides[slideIndex]?.name }}
+    </h1>
+
+    <p *ngIf="slides?.length">
+      {{ slides[slideIndex]?.description }}
+    </p>
+  </div>
+
+  <div class="slideshow-container">
+    <div
+      class="mySlides fade"
+      *ngFor="let slide of slides; let i = index"
+      [class.active]="i === slideIndex"
+    >
+      <div class="numbertext">{{ i + 1 }} / {{ slides.length }}</div>
+      <img [src]="slide.src" [alt]="slide.caption" style="width: 100%" />
+      <div class="text">{{ slide.caption }}</div>
+    </div>
+
+    <a class="prev" (click)="prev()">&#10094;</a>
+    <a class="next" (click)="next()">&#10095;</a>
+  </div>
+</div>

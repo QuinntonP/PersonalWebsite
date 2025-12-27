@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+--bg : #232527;
+--main-text : #e6e6e6;
+--accent-text : #FF9914;
+  --main-container: #161c26;      /* lighter */
+  --secondary-container: #242b36; /* even lighter */
+}
+
+
+
+body {
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  font-family: 'JetBrains Mono', monospace;
+}
+

@@ -1,0 +1,21 @@
+.skills{
+    display: flex;
+    margin-top: 300px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skills h1 {
+    color: var(--accent-text);
+}
+
+.skills .technologies{
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    img {
+        width: 100px;
+        height: auto;
+        margin : 30px;
+    }
+} 

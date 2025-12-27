@@ -1,0 +1,41 @@
+nav {
+  margin: 10px;
+  position: fixed;
+  top: 10px;
+  left: 0;
+  width: 100%;
+
+  padding: 10px 24px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--main-text);
+  font-weight: 500;
+}
+
+nav h1{
+    background: linear-gradient(
+    90deg,
+    var(--accent-text),
+    blue
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text; /* future-proof */
+}
