@@ -28,14 +28,5 @@ nav a {
 }
 
 nav h1{
-    background: linear-gradient(
-    90deg,
-    var(--accent-text),
-    blue
-  );
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  background-clip: text; /* future-proof */
+    color: var(--accent-text);
 }
